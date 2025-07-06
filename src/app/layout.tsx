@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
-// 1. Импортируем наши глобальные стили
+// src/app/layout.tsx
 import "./globals.css";
-// 2. Импортируем наш новый компонент Header.
-//    '@/' - это волшебный короткий путь к папке 'src'
-import Header from "@/components/Header";
 
-export const metadata: Metadata = {
-  title: "Центр Здоровья Животных",
-  description: "Создано с помощью Next.js и магии ;)",
+export const metadata = {
+  title: "Animal Health Center",
+  description: "Премиальный сайт ветеринарной клиники",
 };
 
 export default function RootLayout({
@@ -17,12 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body>
-        {/* 3. Вот здесь мы говорим: "Сначала всегда рисуй шапку" */}
-        <Header />
-        {/* А потом - содержимое текущей страницы */}
-        <main>{children}</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

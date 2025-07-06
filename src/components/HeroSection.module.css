@@ -1,0 +1,79 @@
+.hero {
+  background-color: #f5f5f7;
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.primary,
+.secondary {
+  padding: 10px 24px;
+  font-size: 17px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.primary {
+  background-color: #0071e3;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #005bb5;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #0071e3;
+  border-color: #0071e3;
+}
+
+.secondary:hover {
+  background-color: rgba(0, 113, 227, 0.1);
+}
+
+.tagline {
+  font-size: 16px;
+  color: #6e6e73;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #ff5ac8, #9d5bff, #00c1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.imageWrapper {
+  margin-top: 40px;
+}
+
+.image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
